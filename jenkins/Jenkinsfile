@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/HarshaDoda/devops-project.git'
+                git url: 'https://github.com/HarshaDoda/devops-project.git',branch: 'main'
             }
         }
         stage('Build Backend') {

@@ -18,9 +18,8 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('MySonar') {
-                    sh 'sonar-scanner'
-                }
+                echo 'Skipping SonarQube analysis (SonarQube is not running)'
+    }
             }
         }
     }
